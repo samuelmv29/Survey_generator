@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Survey Report 2025 — Lakewood University</title>
+  <meta name="description" content="Comprehensive COACHE-style faculty survey results for Lakewood University">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <span class="logo-icon">🎓</span>
+        <div>
+          <h1 class="sidebar-title">Lakewood University</h1>
+          <span class="sidebar-subtitle">Faculty Survey 2025</span>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search" placeholder="Search sections…" autocomplete="off">
+    </div>
+    <nav id="sidebar-nav" class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button id="btn-export-html" class="btn btn-export" title="Export full report as standalone HTML">⬇ Export HTML</button>
+      <button id="btn-print" class="btn btn-secondary" title="Print current page">🖨 Print</button>
+    </div>
+  </aside>
+
+  <main id="main-content" class="main-content">
+    <header class="main-header">
+      <button id="btn-menu" class="btn-menu" aria-label="Toggle sidebar">☰</button>
+      <div id="breadcrumb" class="breadcrumb"></div>
+      <div class="header-actions">
+        <button id="btn-bookmark" class="btn-icon" title="Bookmark this page">☆</button>
+        <button id="btn-notes" class="btn-icon" title="Add a note to this page">✎</button>
+        <button id="btn-theme" class="btn-icon" title="Toggle dark mode">◑</button>
+      </div>
+    </header>
+    <div id="page-content" class="page-content"></div>
+    <footer class="main-footer">
+      <div class="footer-nav">
+        <button id="btn-prev" class="btn btn-nav" disabled>← Previous</button>
+        <span id="page-indicator" class="page-indicator"></span>
+        <button id="btn-next" class="btn btn-nav">Next →</button>
+      </div>
+    </footer>
+  </main>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Notes</h3>
+        <button id="modal-close" class="btn-close">&times;</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/tables.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "survey-report-generator",
+  "version": "1.0.0",
+  "description": "Multi-page institutional survey report generator with offline export",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6"
+  }
+}
