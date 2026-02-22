@@ -1,4 +1,4 @@
-# Survey Report Generator
+# SurveySphere
 
 A multi-page institutional survey report viewer and exporter, built with **vanilla HTML/CSS/JS** — zero runtime dependencies. Simulates a COACHE-style Faculty Climate & Satisfaction Survey with 25 report pages, interactive charts, sortable tables, and one-click offline export.
 
